@@ -15,7 +15,7 @@
           Store App
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Store v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
