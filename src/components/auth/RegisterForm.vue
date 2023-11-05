@@ -87,7 +87,7 @@ body {
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
 }
 
 .content .form .user-details {
@@ -122,7 +122,7 @@ body {
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-  border-color: #9b59b6;
+  /* border-color: #9b59b6; */
 }
 
 .form .gender-details .gender-title {
@@ -156,7 +156,7 @@ body {
 #dot-1:checked~.category label .one,
 #dot-2:checked~.category label .two,
 #dot-3:checked~.category label .three {
-  background: #9b59b6;
+  /* background: #9b59b6; */
   border-color: #d9d9d9;
 }
 
@@ -180,12 +180,12 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
 }
 
 .form .button input:hover {
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  /* background: linear-gradient(-135deg, #71b7e6, #9b59b6); */
 }
 
 @media(max-width: 584px) {
