@@ -36,8 +36,14 @@ export default {
     methods: {
         getProducts() {
             var url = "http://localhost:5082/api/Product"
-
-            axios.get(url)
+            var token = JSON.parse(localStorage.getItem("userData")).token;
+            console.log("token: " + token)
+            var header = {
+                headers: {
+                    Authorization: 'Bearer ' + token
+                }
+            }
+            axios.get(url, header)
                 .then(response => {
                     this.productos = response.data
 
