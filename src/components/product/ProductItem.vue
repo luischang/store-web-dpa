@@ -7,7 +7,7 @@
             <q-card-title>{{ producto.description }}</q-card-title>
             <div class="text-h6 font-weight-bold">{{ producto.price }}</div>
             <div class="text-center">
-                <q-btn color="primary" icon="add_shopping_cart" label="Agregar" />
+                <q-btn @click="addToCart" color="primary" icon="add_shopping_cart" label="Agregar" />
             </div>
         </q-card-section>
 
@@ -25,6 +25,7 @@
 </style>
 
 <script>
+import { useCartStore } from 'src/stores/cart-store';
 
 export default {
     name: "ProductItem",
@@ -33,6 +34,13 @@ export default {
             type: Object,
             required: true
         }
+    },
+    methods: {
+        addToCart() {
+            const store = useCartStore()
+            store.addToCart(this.producto)
+        }
+
     }
 
 }

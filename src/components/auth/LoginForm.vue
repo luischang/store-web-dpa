@@ -246,7 +246,7 @@ export default {
                         avatar: 'https://cdn.quasar.dev/img/boy-avatar.png'
                     })
 
-                    this.$router.push("/dashboard")
+                    this.$router.push("/dashboard/product")
 
 
                 }).catch(error => {
